@@ -5,7 +5,7 @@ A simple PHP client for the Salesforce REST API
 
 Install with composer:
 ```
-composer config repositories.salesforce-rest-api vcs https://github.com/gmo/salesforce-rest-api
+composer config repositories.salesforce-rest-api vcs https://github.com/franckgarnier21/salesforce-rest-api
 composer require "gmo/salesforce-rest-api:^1.0"
 ```
 
