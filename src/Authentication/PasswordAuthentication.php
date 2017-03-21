@@ -64,7 +64,7 @@ class PasswordAuthentication implements AuthenticationInterface, LoggerAwareInte
             'password' => $this->password . $this->securityToken,
         );
         $request = $this->guzzle->post('oauth2/token', null, $postFields);
-        $request->setAuth('user', 'pass');
+        //$request->setAuth('user', 'pass');
         $response = $request->send();
         $responseBody = $response->getBody();
         $jsonResponse = json_decode($responseBody, true);
